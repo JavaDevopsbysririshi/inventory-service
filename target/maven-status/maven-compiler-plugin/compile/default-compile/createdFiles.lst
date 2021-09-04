@@ -1,0 +1,8 @@
+com\meru\ecommerce\inventory\inventoryservice\web\InventoryController.class
+com\meru\ecommerce\inventory\inventoryservice\entity\Inventory.class
+com\meru\ecommerce\inventory\inventoryservice\service\InventoryServiceImpl.class
+com\meru\ecommerce\inventory\inventoryservice\entity\Product.class
+com\meru\ecommerce\inventory\inventoryservice\entity\ProductDescription.class
+com\meru\ecommerce\inventory\inventoryservice\dao\InventoryRepository.class
+com\meru\ecommerce\inventory\inventoryservice\InventoryServiceApplication.class
+com\meru\ecommerce\inventory\inventoryservice\service\InventoryService.class

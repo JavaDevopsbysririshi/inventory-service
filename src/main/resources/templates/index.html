@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Inventory List</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+
+</head>
+<body>
+<h1>INVENTORY</h1>
+<table class="table table-striped">
+<tr>
+<th>INVENTORY ID</th>
+<th>PRODUCT ID</th>
+<th>PRODUCT NAME</th>
+<th>QUANTITY</th>
+<th>PICK ZONE</th>
+<th>PACK ZONE</th>
+<th>SHIPPING AREA</th>
+<th>ACTIONS</th>
+
+</tr>
+<tr th:each="inventory:${inventoryDetails}">
+<td th:utext="${inventory.inventoryId}"></td>
+<td th:utext="${inventory.productId}"></td>
+<td th:utext="${inventory.productName}"></td>
+<td th:utext="${inventory.qty}"></td>
+<td th:utext="${inventory.pickZone}"></td>
+<td th:utext="${inventory.packZone}"></td>
+<td th:utext="${inventory.ShippingArea}"></td>
+<td><a th:href="@{/delete/{inventoryId}(inventoryId=${inventory.inventoryId})}" class="btn btn-danger">DELETE</a></td>
+</tr>
+</table>
+
+
+
+<a href="/add" class="btn btn-success">ADD INVENTORY</a>
+<a href="/search" class="btn btn-success">SEARCH AN INVENTORY</a>
+
+</body>
+</html>
